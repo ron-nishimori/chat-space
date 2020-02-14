@@ -2,9 +2,9 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false, index: true|
 |email|string|null: false|
-|password|string|null: false, index: true|
+|password|string|null: false|
 
 ### Association
 - has_many :groups_users
