@@ -1,0 +1,31 @@
+.chat-main
+  .main-header
+    .main-header__left
+      %h2 test
+      %ul Member β
+    %a{ href: "#"}
+      .main-header__right-btn  Edit
+  .messages
+    .message
+      .message__info
+        %p.username  test
+        %p.daytime  2020/2/19(Wed) 17.59.00
+      %p.comment  hello!
+    .message
+      .message__info
+        %p.username  test
+        %p.daytime  2020/2/19(Wed) 17.59.00
+      %p.comment  hello!
+    .message
+      .message__info
+        %p.username  test
+        %p.daytime  2020/2/19(Wed) 17.59.00
+      %p.comment  hello!
+  .form
+    %form
+      .input-box
+        %input{type:  "text", placeholder: "type a message", class: "input-box__text"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", value: "Send", class: "submit-btn"}

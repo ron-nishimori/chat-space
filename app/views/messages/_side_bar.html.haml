@@ -1,0 +1,35 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__username 
+        masa
+      %ul.side-header__box__list
+        %li.side-header__box__edit
+          = link_to "#"  do
+            = icon('fas', 'edit')
+        %li.side-header__box__cog
+          = link_to "#"  do
+            = icon('fas', 'cog')
+  .groups
+    %a
+      .group
+        .group__groupname
+          %p test-name
+        .group__groupmessage
+          %p test-message
+    /仮置き
+    %a
+      .group
+        .group__groupname
+          %p test-name
+        .group__groupmessage
+          %p test-message
+    %a
+      .group
+        .group__groupname
+          %p test-name
+        .group__groupmessage
+          %p test-message
+
+      
+
