@@ -5,31 +5,19 @@
         = current_user.name
       %ul.side-header__box__list
         %li.side-header__box__edit
-          = link_to "#"  do
+          = link_to new_group_path  do
             = icon('fas', 'edit')
         %li.side-header__box__cog
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog', class: 'icon')
   .groups
-    %a
+    - current_user.groups.each do |group|
       .group
-        .group__groupname
-          %p test-name
-        .group__groupmessage
-          %p test-message
-    /仮置き
-    %a
-      .group
-        .group__groupname
-          %p test-name
-        .group__groupmessage
-          %p test-message
-    %a
-      .group
-        .group__groupname
-          %p test-name
-        .group__groupmessage
-          %p test-message
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
 
       
 
