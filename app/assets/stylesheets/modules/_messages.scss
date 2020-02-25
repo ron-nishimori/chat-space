@@ -82,9 +82,14 @@
         margin-bottom: 15px;
       }
       ul {
+        display: flex;
         color: #999999;
         font-size: 12px;
+        .group-user {
+          margin-left: 5px;
+        }
       }
+     
     }
     a {
       text-decoration: none;
@@ -111,6 +116,7 @@
         .username {
           color: #333333;
           font-size: 16px;
+          font-weight: bold;
         }
         .daytime {
           color: #999999;
@@ -130,6 +136,7 @@
     padding: 20px 40px;
     form {
       display: flex;
+      // 仮
       .input-box {
         display: flex;
         position: relative;
@@ -150,6 +157,9 @@
           }
         }
       }
+      // 仮
+      
+      // 仮
       .submit-btn {
         height: 50px;
         background-color: #38aef0;
